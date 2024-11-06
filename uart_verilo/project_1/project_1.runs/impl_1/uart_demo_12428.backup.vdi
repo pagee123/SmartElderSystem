@@ -1,0 +1,743 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jul 19 21:19:13 2020
+# Process ID: 12428
+# Current directory: C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log uart_demo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_demo.tcl -notrace
+# Log file: C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo.vdi
+# Journal file: C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source uart_demo.tcl -notrace
+Command: link_design -top uart_demo -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 604.508 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////時鐘和復歸////////////////////////////////////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk_in'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_rst_n'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////端口/////////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'PC_Uart_rxd'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PC_Uart_txd'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '////////////////////////////////藍芽///////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'BT_Uart_rxd'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_Uart_txd'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bt_mcu_int_i'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////音源端口////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'audio_pwm_o'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audio_sd_o'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////iic////////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'pw_iic_scl_io'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pw_iic_sda_io'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////XADC模擬轉換///////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'A_VAUXN'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A_VAUXP'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XADC_AUX_v_p'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XADC_VP_VN_v_n'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XADC_VP_VN_v_p'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////////////5个按键//////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////////開關sw0~sw7////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////開關sw8~sw15/////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[5]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[6]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[7]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////////LED0~LED15////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////8个7段顯示器/////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[5]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[6]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[7]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////////7段顯示器//////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[5]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[6]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[7]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[4]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[5]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[6]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[7]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '////////////////////////////////////VGA行同步場信號///////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'vga_hs_pin'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_vs_pin'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////////////VGA紅藍綠//////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'vga_R_Data_pin[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_R_Data_pin[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_R_Data_pin[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_R_Data_pin[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_G_Data_pin[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_G_Data_pin[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_G_Data_pin[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_G_Data_pin[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_B_Data_pin[0]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_B_Data_pin[1]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_B_Data_pin[2]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_B_Data_pin[3]'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////////////////DAC模擬奘換//////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'dac_ile'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_cs_n'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_wr1_n'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_wr2_n'. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:134]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:134]
+CRITICAL WARNING: [Designutils 20-1307] Command '////////////////////////////////////////PS2/////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:146]
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////////////////SDRAM//////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:151]
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////32個pmod端口//////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc:195]
+Finished Parsing XDC File [C:/Users/aa/Desktop/uart_verilo/EGo1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 711.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 100 Warnings, 118 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 715.887 ; gain = 404.168
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port exp_io[26] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port exp_io[27] expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 2 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.500 . Memory (MB): peak = 715.887 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 215bff666
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 1200.453 ; gain = 484.566
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1393.813 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1393.813 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1393.813 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1393.813 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1393.813 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1393.813 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.813 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1393.813 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1397.453 ; gain = 3.641
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1397.453 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1397.453 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 215bff666
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1397.453 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 102 Warnings, 118 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:50 . Memory (MB): peak = 1397.453 ; gain = 681.566
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1397.453 ; gain = 0.000
+Writing placer database...
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1397.652 ; gain = 0.199
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file uart_demo_drc_opted.rpt -pb uart_demo_drc_opted.pb -rpx uart_demo_drc_opted.rpx
+Command: report_drc -file uart_demo_drc_opted.rpt -pb uart_demo_drc_opted.pb -rpx uart_demo_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1410.676 ; gain = 13.023
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port exp_io[26] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port exp_io[27] expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1412.688 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 192af82aa
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 1412.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1412.688 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 192af82aa
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1412.801 ; gain = 0.113
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1fcddefcb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1412.801 ; gain = 0.113
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1fcddefcb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1412.801 ; gain = 0.113
+Phase 1 Placer Initialization | Checksum: 1fcddefcb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1412.801 ; gain = 0.113
+
+Phase 2 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1412.801 ; gain = 0.000
+Phase 2 Final Placement Cleanup | Checksum: 1fcddefcb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1412.801 ; gain = 0.113
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: 192af82aa
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1412.801 ; gain = 0.113
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 104 Warnings, 118 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1412.801 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1415.828 ; gain = 3.027
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file uart_demo_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1415.828 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file uart_demo_utilization_placed.rpt -pb uart_demo_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file uart_demo_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1415.828 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Vivado_Tcl 4-235] No timing constraint found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 104 Warnings, 118 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1415.828 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1423.445 ; gain = 7.617
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: c9e72b45 ConstDB: 0 ShapeSum: c8c85765 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: b3a5992c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1514.465 ; gain = 80.016
+Post Restoration Checksum: NetGraph: 3d2a0208 NumContArr: 767b9724 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: b3a5992c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1520.445 ; gain = 85.996
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: b3a5992c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1520.445 ; gain = 85.996
+Phase 2 Router Initialization | Checksum: b3a5992c
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1521.980 ; gain = 87.531
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+ Number of Nodes with overlaps = 0
+Phase 3 Initial Routing | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.922 ; gain = 90.473
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+Phase 4.1 Global Iteration 0 | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.922 ; gain = 90.473
+Phase 4 Rip-up And Reroute | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.922 ; gain = 90.473
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.922 ; gain = 90.473
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.922 ; gain = 90.473
+Phase 6 Post Hold Fix | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.922 ; gain = 90.473
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000159451 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 0.900901%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 0%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.922 ; gain = 90.473
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1526.930 ; gain = 92.480
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 9e58bab8
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1526.930 ; gain = 92.480
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1526.930 ; gain = 92.480
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+64 Infos, 104 Warnings, 118 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1526.930 ; gain = 103.484
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1526.930 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1538.156 ; gain = 11.227
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file uart_demo_drc_routed.rpt -pb uart_demo_drc_routed.pb -rpx uart_demo_drc_routed.rpx
+Command: report_drc -file uart_demo_drc_routed.rpt -pb uart_demo_drc_routed.pb -rpx uart_demo_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file uart_demo_methodology_drc_routed.rpt -pb uart_demo_methodology_drc_routed.pb -rpx uart_demo_methodology_drc_routed.rpx
+Command: report_methodology -file uart_demo_methodology_drc_routed.rpt -pb uart_demo_methodology_drc_routed.pb -rpx uart_demo_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/aa/Desktop/uart_verilo/project_1/project_1.runs/impl_1/uart_demo_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file uart_demo_power_routed.rpt -pb uart_demo_power_summary_routed.pb -rpx uart_demo_power_routed.rpx
+Command: report_power -file uart_demo_power_routed.rpt -pb uart_demo_power_summary_routed.pb -rpx uart_demo_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+76 Infos, 105 Warnings, 118 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file uart_demo_route_status.rpt -pb uart_demo_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file uart_demo_timing_summary_routed.rpt -pb uart_demo_timing_summary_routed.pb -rpx uart_demo_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file uart_demo_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file uart_demo_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file uart_demo_bus_skew_routed.rpt -pb uart_demo_bus_skew_routed.pb -rpx uart_demo_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 19 21:21:31 2020...
